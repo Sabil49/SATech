@@ -2,18 +2,18 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <div className=" flex sticky top-0 z-[100] justify-between items-center px-12 py-2 text-black  bg-[#fffbfb]">
+    <div id="Header" className=" flex sticky top-0 z-[100] justify-between items-center px-12 py-2 text-black  bg-[#fffbfb]">
       <div>
-        <Image src="/logo.png" alt="SA Tech logo" width={30} height={30} />
+        <a href="#Home"><Image src="/logo.png" alt="SA Tech logo" width={30} height={30} /></a>
       </div>
       <div>
         <nav>
-          <ul className="flex space-x-16 text-md">
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Contact</li>
-            <li><a href="#">Login</a></li>
+          <ul className="flex space-x-16 text-md *:hover:text-gray-300">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#HowItWorks">How it Works</a></li>
+            <li><a href="#Reviews">Reviews</a></li>
+            <li><a href="#About">About</a></li>            
+            <li><a href="#Contact">Contact</a></li>
           </ul>
         </nav>
       </div>

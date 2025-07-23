@@ -41,13 +41,13 @@ export const AnimatedTestimonials = ({
   };
 
     return (
-        <div className="min-h-screen bg-[linear-gradient(rgba(255,255,255,0.1)_1px,transparent_1px),linear-gradient(to_right,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[size:44px_44px] relative">
+        <div id="Reviews" className="pt-12 min-h-screen bg-[linear-gradient(rgba(255,255,255,0.1)_1px,transparent_1px),linear-gradient(to_right,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[size:44px_44px] relative">
             <div className="absolute inset-0 bg-[linear-gradient(rgba(148,82,255,0.03)_1px,transparent_1px),linear-gradient(to_right,rgba(148,82,255,0.03)_1px,transparent_1px)] bg-[size:44px_44px]"></div>
             <div className="container mx-auto px-4">
                 <div className="py-5 md:py-10 text-center">
                     <h2 className=" text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-bold bg-white text-transparent bg-clip-text">What our buyers are saying</h2>
                 </div>
-                <div className="relative max-w-4xl mx-auto mt-6">
+                <div className="relative max-w-4xl mx-auto mt-12">
                     <button
                         className="absolute left-0 top-1/2  border border-gray-200 -translate-y-1/2 -translate-x-4 md:-translate-x-12 z-20 p-2 rounded-full bg-black/30 backdrop-blur-sm transition-all opacity-70 hover:opacity-100 hover:scale-110"
                         aria-label="Previous testimonial"

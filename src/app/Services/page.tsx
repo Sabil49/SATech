@@ -1,6 +1,6 @@
 export default function Services() {
   return (
-<div className="w-full px-40 bg-[#faf6f6] text-white py-12">
+<div  id="HowItWorks" className="w-full px-40 bg-[#faf6f6] text-white py-12 pt-18">
     <div className="text-center">
         <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-bold bg-gradient-to-r from-[#FF8B8B] to-[#9C5FE4] text-transparent bg-clip-text">What we do</h2>
         <div className="flex flex-col items-center mt-4">
@@ -17,15 +17,15 @@ export default function Services() {
                 </div>
                 <div className="w-full md:w-[calc(50%-3rem)] text-center relative md:text-right">
                     <div className="relative z-10 space-y-4 p-6 md:p-8">
-                        <div className="inline-block px-4 py-1 rounded-full bg-gray-50 border border-gray-200 backdrop-blur-sm">
-                            <span className="text-sm text-gray-600">
+                        <div className="inline-block px-4 py-1 rounded-full bg-gray-50 border border-gray-300 backdrop-blur-sm">
+                            <span className="text-sm text-gray-700">
                                 Step 01
                             </span>
                         </div>
-                        <h3 className="text-xl md:text-2xl"><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF8B8B] to-[#9C5FE4]">Download &amp; begin</span></h3>
-                        <p className=" !text-sm md:!text-lg text-gray-600 leading-relaxed">Your journey begins with a simple step: Download the app and unlock a 7-day free trial to explore the power of music for self-care.</p>
+                        <h3 className="text-xl md:text-2xl"><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF8B8B] to-[#9C5FE4]">Buy &amp; Polish</span></h3>
+                        <p className=" !text-sm md:!text-lg text-gray-700 leading-relaxed">Our journey begins with a simple step: Buying the stocks than polish & furnish them.</p>
                     </div>
-                    <div className="absolute inset-0 bg-white/5 backdrop-blur-sm rounded-3xl border border-gray-200 hover:border-white/20 transition-all duration-300 group-hover:bg-white/10">
+                    <div className="absolute inset-0 bg-white/5 backdrop-blur-sm rounded-3xl border border-gray-300 hover:border-white/20 transition-all duration-300 group-hover:bg-white/10">
                         <div className="absolute inset-0 bg-gradient-to-r from-[#FF8B8B] to-[#9C5FE4] opacity-5 group-hover:opacity-10 transition-opacity duration-300 rounded-3xl"></div>
                     </div>
                 </div>
@@ -38,17 +38,15 @@ export default function Services() {
                 </div>
                 <div className="w-full md:w-[calc(50%-3rem)] text-center relative md:text-left">
                     <div className="relative z-10 space-y-4 p-6 md:p-8">
-                        <div className="inline-block px-4 py-1 rounded-full bg-gray-50 border border-gray-200 backdrop-blur-sm">
-                            <span className="text-sm text-gray-600">
+                        <div className="inline-block px-4 py-1 rounded-full bg-gray-50 border border-gray-300 backdrop-blur-sm">
+                            <span className="text-sm text-gray-700">
                                 Step 02
                             </span>
                         </div>
-                        <h3 className="text-xl md:text-2xl"><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF8B8B] to-[#9C5FE4]">Practice deep listening</span></h3>
-                        <p className=" !text-sm md:!text-lg text-gray-600 leading-relaxed">
-                            Immerse yourself in multi-dimensional, electro-acoustic compositions designed to elevate your inward practice. Put on your headphones, close your eyes, and let the music transport you to the universe within.
-                        </p>
+                        <h3 className="text-xl md:text-2xl"><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF8B8B] to-[#9C5FE4]">Buy &amp; Polish</span></h3>
+                        <p className=" !text-sm md:!text-lg text-gray-700 leading-relaxed">Our journey begins with a simple step: Buying the stocks than polish & furnish them.</p>
                     </div>
-                    <div className="absolute inset-0 bg-white/5 backdrop-blur-sm rounded-3xl border border-gray-200 hover:border-white/20 transition-all duration-300 group-hover:bg-white/10">
+                    <div className="absolute inset-0 bg-white/5 backdrop-blur-sm rounded-3xl border border-gray-300 hover:border-white/20 transition-all duration-300 group-hover:bg-white/10">
                         <div className="absolute inset-0 bg-gradient-to-r from-[#FF8B8B] to-[#9C5FE4] opacity-5 group-hover:opacity-10 transition-opacity duration-300 rounded-3xl"></div>
                     </div>
                 </div>
@@ -61,17 +59,15 @@ export default function Services() {
                 </div>
                 <div className="w-full md:w-[calc(50%-3rem)] text-center relative md:text-right">
                     <div className="relative z-10 space-y-4 p-6 md:p-8">
-                        <div className="inline-block px-4 py-1 rounded-full bg-gray-50 border border-gray-200 backdrop-blur-sm">
-                            <span className="text-sm text-gray-600">
+                        <div className="inline-block px-4 py-1 rounded-full bg-gray-50 border border-gray-300 backdrop-blur-sm">
+                            <span className="text-sm text-gray-700">
                                 Step 03
                             </span>
                         </div>
-                        <h3 className="text-xl md:text-2xl"><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF8B8B] to-[#9C5FE4]">Feel more connected</span></h3>
-                        <p className=" !text-sm md:!text-lg text-gray-600 leading-relaxed">
-                            Experience the transformative power of music as you become more attuned to yourself and the world around you. Find balance, focus, and connection—every day.
-                        </p>
+                        <h3 className="text-xl md:text-2xl"><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF8B8B] to-[#9C5FE4]">Buy &amp; Polish</span></h3>
+                        <p className=" !text-sm md:!text-lg text-gray-700 leading-relaxed">Our journey begins with a simple step: Buying the stocks than polish & furnish them.</p>
                     </div>
-                    <div className="absolute inset-0 bg-white/5 backdrop-blur-sm rounded-3xl border border-gray-200 hover:border-white/20 transition-all duration-300 group-hover:bg-white/10">
+                    <div className="absolute inset-0 bg-white/5 backdrop-blur-sm rounded-3xl border border-gray-300 hover:border-white/20 transition-all duration-300 group-hover:bg-white/10">
                         <div className="absolute inset-0 bg-gradient-to-r from-[#FF8B8B] to-[#9C5FE4] opacity-5 group-hover:opacity-10 transition-opacity duration-300 rounded-3xl"></div>
                     </div>
                 </div>

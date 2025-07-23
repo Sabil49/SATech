@@ -18,7 +18,7 @@ export default function Banner() {
     ];
 
   return (
-    <div className="flex h-[550px] py-4 justify-between px-24 items-center relative">
+    <div id="Home" className="flex h-[550px] py-4 justify-between px-24 items-center relative">
       <div className='absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.1)_1px,transparent_1px),linear-gradient(to_right,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[size:44px_44px]'></div>
       <div className="w-1/3 flex flex-col items-start !leading-none z-50">
         <h1>Refurnished</h1>
@@ -29,7 +29,7 @@ export default function Banner() {
             Get Reupdated version of your favorite phone
             with full warranty and support
         </p>
-        <button className=" flex items-center text-white bg-black rounded-3xl px-4 py-3">Explore <GoArrowRight className=" ml-1" /></button>
+        <button className=" flex items-center text-white bg-black rounded-3xl px-4 py-3"><a href='#HowItWorks'>Explore</a><GoArrowRight className=" ml-1" /></button>
       </div>
       <div className="w-1/2 shadow-3xl rounded-2xl relative">
       <div className='absolute z-50 inset-0 bg-[linear-gradient(rgba(177, 141, 250,0.1)_1px,transparent_1px),linear-gradient(to_right,rgba(177, 141, 250,0.1)_1px,transparent_1px)] bg-[size:44px_44px]'></div>
