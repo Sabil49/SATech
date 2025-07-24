@@ -1,11 +1,8 @@
 'use client'
 import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import Image from "next/image";
-import {
-	faAngleLeft,
-	faAngleRight,faEnvelope
-} from "@fortawesome/free-solid-svg-icons";
+
 import PropTypes from "prop-types";
 import { FaTwitter,FaFacebookF } from 'react-icons/fa';
 
@@ -32,7 +29,7 @@ const OwnersList = [
 			photo:
 				"/images/Image1.png",
 			name: "Olivia Harper",
-            details: 'Cheif Technology Officer at SA Tech',
+            details: 'Chief Technology Officer at SA Tech',
 			rating: 4.5,
 			content:
 				"Olivia Harper is a highly innovative graphic designer and the principal designer at CreativEdge Studio. Known for her ability to merge aesthetics with functionality, Olivia has played a pivotal role in transforming design trends. Her work has received acclaim in the design community, and Olivia is a frequent speaker at graphic design symposiums. Through her presentations, Olivia inspires designers to think outside the box, embrace experimentation, and redefine the visual language of design.",
@@ -70,14 +67,22 @@ const OwnersList = [
 ];
 
 
-const Owners = ({ item }) => {
+interface OwnerItem {
+	photo: string;
+	name: string;
+	details: string;
+	rating: number;
+	content: string;
+}
+
+const Owners = ({ item }: { item: OwnerItem }) => {
 	const {  content, photo, name,details } = item;
 	return (
 		<>
-		<div className=" dark:bg-slate-800 rounded-xl h-full duration-300 px-6">
+		<div className=" dark:bg-slate-800 rounded-xl md:h-full duration-300">
 			<div className="mt-4">				
 				<div>
-                    <div className="relative h-[350px]">
+                    <div className="relative h-[325px] lg:h-[300px] md:h-[237.5px] xl:h-[350px]">
 					<div className="mr-2 absolute z-10 h-[300px]">
 						<Image
 							src={photo}
@@ -87,23 +92,23 @@ const Owners = ({ item }) => {
                             height="400"
 						/>
 					</div>
-                    <div className="h-[300px] w-[300px] absolute left-[20px] top-[20px]  bg-gradient-to-r from-[#FF8B8B] to-[#9C5FE4]  rounded-tl-[50px] rounded-br-[50px]"></div>
+                    <div className="h-[300px] w-[300px] hidden xl:block absolute left-[20px] top-[20px]  bg-gradient-to-r from-[#FF8B8B] to-[#9C5FE4]  rounded-tl-[50px] rounded-br-[50px]"></div>
+					</div>
+                    <div className="" id="Contact">
+						<h5 className=" text-xl sm:text-2xl  text-transparent bg-clip-text bg-gradient-to-r from-[#FF8B8B] to-[#9C5FE4] font-bold">{name}</h5>
 					</div>
                     <div className="">
-						<h5 className="text-3xl text-transparent bg-clip-text bg-gradient-to-r from-[#FF8B8B] to-[#9C5FE4] font-bold">{name}</h5>
+						<h6 className=" text-sm sm:text-lg text-transparent bg-clip-text bg-gradient-to-r from-[#FF8B8B] to-[#9C5FE4]">{details}</h6>
+						<h6 className=" text-sm sm:text-lg text-transparent bg-clip-text bg-gradient-to-r from-[#FF8B8B] to-[#9C5FE4] font-semibold">+91-9876543210</h6>
+						<a className=" text-sm sm:text-lg text-transparent bg-clip-text bg-gradient-to-r from-[#FF8B8B] to-[#9C5FE4] font-semibold" href="mailto:abc@gmail.com">abc@gmail.com</a>
 					</div>
-                    <div className=""  id="Contact">
-						<h6 className="text-lg text-transparent bg-clip-text bg-gradient-to-r from-[#FF8B8B] to-[#9C5FE4]">{details}</h6>
-						<h6 className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF8B8B] to-[#9C5FE4] text-lg font-semibold">+91-9876543210</h6>
-						<a className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF8B8B] to-[#9C5FE4] text-lg font-semibold" href="mailto:abc@gmail.com">abc@gmail.com</a>
-					</div>
-                    <p className="mt-4 !text-[16px]">{content}</p>
+                    <p className="mt-4 !text-[14px] sm:!text-[16px]">{content}</p>
                     
 				</div>
 			</div>
 			
 		</div>
-		<div className="flex px-6 mt-2 *:flex *:rounded-full *:w-[30px] h-[30px] *:items-center *:justify-center *:bg-black *:text-white">
+		<div className="flex md:px-6 mt-2 *:flex *:rounded-full *:w-[30px] h-[30px] *:items-center *:justify-center *:bg-black *:text-white">
                         <div><FaTwitter /></div>
                         <div className=" ml-3"><FaFacebookF /></div>
                     </div>
@@ -115,39 +120,39 @@ Owners.propTypes = {
 };
 
 export default function AboutUs(){
-	const [index, setIndex] = useState(0);
+	const [index] = useState(0);
 
-	const handleControl = (type) => {
-		if (type === "prev") {
-			setIndex(index <= 0 ? OwnersList.length - 1 : index - 1);
-		} else if (type === "next") {
-			setIndex(index >= OwnersList.length - 1 ? 0 : index + 1);
-		}
-	};
+	// const handleControl = (type) => {
+	// 	if (type === "prev") {
+	// 		setIndex(index <= 0 ? OwnersList.length - 1 : index - 1);
+	// 	} else if (type === "next") {
+	// 		setIndex(index >= OwnersList.length - 1 ? 0 : index + 1);
+	// 	}
+	// };
 	return (
-        <div id="About" className="pt-18 w-full px-40 bg-[#faf6f6] text-white py-12">
+        <div id="About" className="pt-18 w-full px-6 sm:px-9 md:px-12 lg:px-27 bg-[#faf6f6] text-white py-12">
             {/* <h1 className="text-5xl mb-3">Meet the Speakers</h1>
             <p>Meet visionary leaders shaping the future. Our speakers share experiences and innovative ideas. Connect</p>
 <p>with bright minds redefining industry boundaries.</p> */}
             
 		<div className="text-center">
-        <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-bold bg-gradient-to-r from-[#FF8B8B] to-[#9C5FE4] text-transparent bg-clip-text">Meet the Founders</h2>
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold pb-6 bg-gradient-to-r from-[#FF8B8B] to-[#9C5FE4] text-transparent bg-clip-text">Meet the Founders</h2>
     </div>
 
 		<section className="ezy__testimonial20 light dark:bg-[#0b1727] text-zinc-900 dark:text-white">
 			<div className="container relative">
 								<div className="relative grid grid-cols-6 gap-y-6 md:gap-x-6">
 					{OwnersList[index].map((item, i) => (
-						<div className="col-span-6 md:col-span-3 lg:col-span-2" key={i}>
+						<div className=" col-span-6 md:col-span-2" key={i}>
 							<Owners item={item} />
 						</div>
 					))}
-                    {/* <button className=" absolute bottom-[40%] text-lg -left-[2.5%] cursor-pointer dark:bg-slate-800 opacity-75 hover:opacity-100 w-10 h-10 flex justify-center items-center rounded-full bg-gradient-to-r from-[#FF8B8B] to-[#9C5FE4]" onClick={() => handleControl("prev")}>
+                     {/* <button className=" absolute bottom-[40%] text-lg -left-[2.5%] cursor-pointer dark:bg-slate-800 opacity-75 hover:opacity-100 w-10 h-10 flex justify-center items-center rounded-full bg-gradient-to-r from-[#FF8B8B] to-[#9C5FE4]" onClick={() => handleControl("prev")}>
 								<FontAwesomeIcon icon={faAngleLeft} />
 							</button>
 							<button className=" absolute bottom-[40%] -right-[2.5%] cursor-pointer text-lg dark:bg-slate-800 opacity-75 hover:opacity-100 w-10 h-10 flex justify-center items-center rounded-full bg-gradient-to-r from-[#FF8B8B] to-[#9C5FE4]" onClick={() => handleControl("next")}>
 								<FontAwesomeIcon icon={faAngleRight} />
-							</button> */}
+							</button>  */}
 				</div>
 			</div>
 		</section>

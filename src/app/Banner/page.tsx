@@ -18,8 +18,8 @@ export default function Banner() {
     ];
 
   return (
-    <div id="Home" className="flex h-[550px] py-4 justify-between px-24 items-center relative">
-      <div className='absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.1)_1px,transparent_1px),linear-gradient(to_right,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[size:44px_44px]'></div>
+    <div id="Home" className="flex h-[550px] py-4 justify-between px-6 sm:px-9 md:px-12 lg:px-27 items-center relative">
+      <div className='absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.1)_1px,transparent_1px),linear-gradient(to_right,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[size:33px_33px] lg:bg-[size:44px_44px]'></div>
       <div className="w-1/3 flex flex-col items-start !leading-none z-50">
         <h1>Refurnished</h1>
         <h1>Repolished</h1>
