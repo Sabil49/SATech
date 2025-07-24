@@ -13,7 +13,7 @@ export default function Footer(){
         <div className="w-full py-4 text-transparent bg-[#faf6f6]">This is hidden text</div>
         
 <div className="w-full  px-6 sm:px-9 md:px-12 lg:px-27 text-white bg-[linear-gradient(rgba(255,255,255,0.1)_1px,transparent_1px),linear-gradient(to_right,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[size:44px_44px]">
-    <div className="column-3 md:columns-6 gap-1 sm:gap-2 md:gap-3 lg:gap-4 py-12">
+    <div className="columns-6 gap-1 sm:gap-2 md:gap-3 lg:gap-4 py-12">
     <div><Image src="/logo/paystock.PNG" width={200} height={50} alt="" /></div>
         <div><Image src="/logo/Flutterwave.PNG" width={200} height={50} alt="" /></div>
         <div><Image src="/logo/amazon.PNG" width={200} height={50} alt="" /></div>
@@ -25,10 +25,10 @@ export default function Footer(){
     <div className="pb-1 overflow-auto flex justify-between">
         <div className="flex items-center">
             <span><Image src="/logo.png" width={45} height={45} alt="logo" /></span>
-            <span className="font-semibold text-xs md:text-lg ml:1 md:ml-2 text-white">SA Tech</span>
+            <span className="font-semibold text-[9px] md:text-lg ml:1 md:ml-2 text-white">SA Tech</span>
         </div>
         <div className="flex items-center">
-            <ul className="*:float-left *:ml-2 md:*:ml-8 *:text-[10px] md:*:text-sm">
+            <ul className="*:float-left *:ml-2 md:*:ml-8 *:text-[9px] md:*:text-sm">
                 <li className=" text-white hover:text-gray-200"><a href="">contact@designhub.com</a></li>
                 <li className=" text-white hover:text-gray-200 cursor-pointer">Privacy policy</li>
                 <li className=" text-white hover:text-gray-200 cursor-pointer">Terms & Agreements</li>
