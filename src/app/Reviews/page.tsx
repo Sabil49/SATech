@@ -41,7 +41,7 @@ export const AnimatedTestimonials = ({
   };
 
     return (
-        <div id="Reviews" className="pt-12 min-h-screen bg-[linear-gradient(rgba(255,255,255,0.1)_1px,transparent_1px),linear-gradient(to_right,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[size:44px_44px] relative">
+        <div id="Reviews" className="pt-12  bg-[linear-gradient(rgba(255,255,255,0.1)_1px,transparent_1px),linear-gradient(to_right,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[size:44px_44px] relative">
             <div className="absolute inset-0 bg-[linear-gradient(rgba(148,82,255,0.03)_1px,transparent_1px),linear-gradient(to_right,rgba(148,82,255,0.03)_1px,transparent_1px)] bg-[size:44px_44px]"></div>
             <div className="container mx-auto px-4  !max-w-[42rem] lg:!max-w-[80rem]">
                 <div className="py-5 md:py-10 text-center">
