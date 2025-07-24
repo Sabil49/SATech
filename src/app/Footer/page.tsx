@@ -14,12 +14,12 @@ export default function Footer(){
         
 <div className="w-full  px-6 sm:px-9 md:px-12 lg:px-27 text-white bg-[linear-gradient(rgba(255,255,255,0.1)_1px,transparent_1px),linear-gradient(to_right,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[size:44px_44px]">
     <div className="columns-6 gap-1 sm:gap-2 md:gap-3 lg:gap-4 py-12">
-    <div><Image src="/logo/paystock.png" width={200} height={50} alt="" /></div>
-        <div><Image src="/logo/Flutterwave.png" width={200} height={50} alt="" /></div>
-        <div><Image src="/logo/amazon.png" width={200} height={50} alt="" /></div>
-        <div><Image src="/logo/flipkart.png" width={200} height={50} alt="" /></div>
-        <div><Image src="/logo/Cognism.png" width={200} height={50} alt="" /></div>
-        <div><Image src="/logo/Fisano.png" width={200} height={50} alt="" /></div>
+    <div><Image src="/logo/paystock.PNG" width={200} height={50} alt="" /></div>
+        <div><Image src="/logo/Flutterwave.PNG" width={200} height={50} alt="" /></div>
+        <div><Image src="/logo/amazon.PNG" width={200} height={50} alt="" /></div>
+        <div><Image src="/logo/flipkart.PNG" width={200} height={50} alt="" /></div>
+        <div><Image src="/logo/Cognism.PNG" width={200} height={50} alt="" /></div>
+        <div><Image src="/logo/Fisano.PNG" width={200} height={50} alt="" /></div>
     </div>
 
     <div className="pb-1 overflow-auto flex justify-between">
